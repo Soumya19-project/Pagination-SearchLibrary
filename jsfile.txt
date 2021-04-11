@@ -1,3 +1,9 @@
+var sortBy = 'all';
+var current_page = 1;
+var noOfRows = 10;
+var noOfContacts = user_details.length;
+var sortedUserDetails = [];
+var page_count='';
 var user_details = [
 	 { "name": "kiran", "email": "airanb@gmail.com", "age":1 },
 	  { "name": "naveen B", "email": "naveen@gmail.com", "age":2 },
@@ -97,12 +103,7 @@ function GetSortOrder(prop) {
 }
 
   
-var sortBy = 'all';
-var current_page = 1;
-var noOfRows = 10;
-var noOfContacts = user_details.length;
-var sortedUserDetails = [];
-var page_count='';
+
 
 function DisplayList (user_details, div_ele, rows, current_page, sortBy) {
 	sortBy = sortBy;
